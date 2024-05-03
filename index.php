@@ -53,8 +53,8 @@ require_once __DIR__ . '/data/db.php';
           <img src="<?php echo $toy->getImg() ?>" class="card-img-top" alt="...">
           <div class="card-body">
             <h3 class="card-title"><?php echo $toy->getName() ?></h3>
-            <p class="card-text">Cibo per: <?php echo $toy->getCategories() ?></p>
-            <p class="card-text">Ingredienti: <?php echo $toy->getMaterials() ?></p>
+            <p class="card-text">Gioco per: <?php echo $toy->getCategories() ?></p>
+            <p class="card-text">Materiali: <?php echo $toy->getMaterials() ?></p>
             <p class="card-text">Prezzo: &euro;<?php echo $toy->getPrice() ?></p>
             
           </div>
