@@ -1,3 +1,8 @@
 body{
-  /* background-color: blue; */
+  background-image: url(https://www.consultingitaliagroup.com/upload/news/evidenza/104/09-05-17-Pet-shop-normativa-.jpg);
+  background-size: cover;
+}
+
+h2{
+  color: rgb(106, 233, 233);
 }
