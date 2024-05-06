@@ -4,8 +4,8 @@
 class Shop{
 
   public $name;
-  public $price;
-  public $img;
+  private $price;
+  private $img;
   public $categories;
 
   public function __construct(string $_name, float $_price, string $_img, string $_catecories){
@@ -20,9 +20,15 @@ class Shop{
     return "$this->name";
   }
   public function getPrice(){
+    if(!is_numeric($this->price)){
+      throw new Exception('Il prezzo deve essere un numero');
+    };
     return "$this->price";
   }
   public function getImg(){
+    if(empty($this->img)){
+      throw new Exception('Immagine non presente');
+    }
     return "$this->img";
   }
   public function getCategories(){

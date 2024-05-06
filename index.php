@@ -32,12 +32,13 @@ require_once __DIR__ . '/data/db.php';
             <p class="card-text">Cibo per: <?php echo $food->getCategories() ?></p>
             <p class="card-text">Ingredienti: <?php echo $food->getIngredients() ?></p>
             <p class="card-text">Prezzo: &euro;<?php echo $food->getPrice() ?></p>
+            <p class="card-text"><?php echo $food->getLastpieces() ?></p>
             
           </div>
         </div>
 
       </div>
-    <?php endforeach ?>
+    <?php endforeach; ?>
   </div>
   
 </div>

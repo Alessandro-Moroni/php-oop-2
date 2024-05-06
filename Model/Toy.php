@@ -1,5 +1,5 @@
 <?php
-
+require_once __DIR__ . '/Shop.php';
 class Toy extends Shop {
 
   public $materials;

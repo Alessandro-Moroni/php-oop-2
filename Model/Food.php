@@ -1,7 +1,8 @@
 <?php 
-
+require_once __DIR__ . '/Shop.php';
 class Food extends Shop {
 
+  use Lastpieces;
   public $ingredients;
 
   function __construct(string $_name, float $_price, string $_img, string $_catecories, string $_ingredients)
@@ -17,4 +18,9 @@ class Food extends Shop {
 
 }
 
+trait Lastpieces{
+  public function getLastpieces(){
+    return "Ultimi pezzi";
+  }
+}
 ?>
